@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+li {
+    list-style-type: none;
+}
+
+.padding-site {
+    padding: 0 100px;
+}
+
+.container {
+    min-height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: rgb(221, 229, 230);
+    background: linear-gradient(0deg, rgba(221, 229, 230, 1) 0%, rgba(209, 215, 215, 1) 70%, rgba(166, 163, 159, 1) 100%);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+}
+
+.cart-button {
+    margin: 10px 0 0 300px;
+    color: grey;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3.6px;
+    width: 150px;
+    height: 40px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.cart-button:hover {
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35) inset;
+}
+
+.menu-list {
+    list-style-type: none;
+    float: left;
+}
+
+.menu-link {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 13px;
+}
+.total-price {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 13px;
+}
+}
+.menu-link:hover {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.menu-link-active {
+    color: #212121;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    border-bottom: 3px solid #212121;
+    text-decoration: none;
+}
+.goods-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    
+}
+.goods-item {
+    margin: 10px 20px;
+    padding: 5px;
+    width: 200px;
+    height: 250px;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.goods-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.addItem{
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.addItem:hover {
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35) inset;
+}
