@@ -47,6 +47,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 3.6px;
     width: 150px;
+
     height: 40px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
@@ -82,7 +83,6 @@ header {
     text-transform: uppercase;
     text-decoration: none;
     padding: 18px 13px;
-}
 }
 .menu-link:hover {
     color: #212121;
