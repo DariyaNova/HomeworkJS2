@@ -39,16 +39,15 @@ header {
     padding: 50px 100px;
 }
 
-.menu {}
-
 .cart-button {
-    margin: 0 0 0 400px;
+    margin: 10px 0 0 300px;
     color: grey;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 3.6px;
-    width: 130px;
+    width: 150px;
+
     height: 40px;
     box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
     border-radius: 23px;
@@ -77,7 +76,14 @@ header {
     text-decoration: none;
     padding: 18px 13px;
 }
-
+.total-price {
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 18px 13px;
+}
 .menu-link:hover {
     color: #212121;
     border-bottom: 3px solid #212121;
@@ -93,14 +99,45 @@ header {
 .goods-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     
 }
 .goods-item {
+    margin: 10px 20px;
     padding: 5px;
     width: 200px;
     height: 250px;
     border: 1px solid grey;
     border-radius: 10px;
     background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.goods-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+}
+.addItem{
+    color: grey;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2.5px;
+    width: 100px;
+    height: 30px;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35);
+    border-radius: 23px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+}
+
+.addItem:hover {
+    color: black;
+    font-weight: 700;
+    box-shadow: 0 2px 5px 1px rgba(33, 33, 33, 0.35) inset;
 }
