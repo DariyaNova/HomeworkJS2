@@ -7,24 +7,50 @@
     <link rel="stylesheet" href="style.css"> </head>
 
 <body>
-   <div class="container">
-    <header>
-        <ul class="menu">
-            <li class="menu-list"><a href="#" class="menu-link">HOME</a></li>
-            <li class="menu-list"><a href="#" class="menu-link menu-link-active">CATALOG</a></li>
-        </ul>
-        <button class="cart-button" type="button" onclick="Cart()">КОРЗИНА</button>
-        <div class="total-price"></div>
-    </header>
-    <main>
-       
-        <div class="goods-list"></div>
-        <p>У вас в корзине:</p>
-        <div class="cart-list"></div>
-        
-    </main>
-    <script src="script.js"></script>
+    <div class="container" id="app">
+        <header>
+            <div class="logo">eShop</div>
+            <div class="menu">
+                <form action="#" class="search-form">
+                    <input type="text" class="search-field" v-model="searchLine" placeholder="Поиск..">
+                    <button class="btn-search" type="submit" @click="filterGoods"> </button>
+                </form>
+                <button class="btn-cart" type="button" @click="isVisibleCart = !isVisibleCart">Корзина</button>
+                <div class="cart" v-if="isVisibleCart">
+                    <div class="cart-block" v-if="cart.length == 0">Ваша корзина пуста</div>
+                    <div class="cart-block" v-else>
+                        <p>Ваши товары:</p>
+                        <hr>
+                        <div class="cart-products" v-for="product of cart" :key="product.id_product">
+                            <div class="cart-item">
+                                <p>{{product.title}}: {{product.price * product.quantity}} $</p>
+                                <div class="cart-btn-block">
+                                    <button class="cart-btn" @click="addProduct(product)">+</button>
+                                    <button class="cart-btn" @click="removeProduct(product)">-</button>
+                                    <button class="cart-btn" @click="deleteProduct(product)">x</button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <p>Сумма Вашей покупки: {{calcCart()}} $</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="products">
+                <div class="product-item" v-for="product of filteredProducts" :key="product.id_product"> <img :src="product.img" alt="Foto" width="150" height="150">
+                    <div class="desc">
+                        <h3>{{product.title}}</h3>
+                        <p>{{product.price}} $</p>
+                        <button class="buy-btn" @click="addProduct(product)">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
