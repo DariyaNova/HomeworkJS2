@@ -1,0 +1,18 @@
+{
+  "amount": 798,
+  "countGoods": 2,
+  "contents": [
+    {
+      "id_product": 5041,
+      "product_name": "T-Shirt",
+      "price": 199,
+      "quantity": 1
+    },
+    {
+      "id_product": 3009,
+      "product_name": "Jacket",
+      "price": 599,
+      "quantity": 1
+    }
+  ]
+}
