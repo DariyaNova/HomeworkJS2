@@ -104,12 +104,12 @@ p {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.62);
     border-radius: 5px;
     box-sizing: border-box;
-    right: 0;
-    top: 130%;
+    right: 18%;
+    top: 13%;
     position: absolute;
     background-color: grey;
     padding: 20px;
-    color: black;
+    color: white;
     width: 300px;
 }
 
@@ -178,7 +178,7 @@ p {
 
 .search-form {
     position: relative;
-    margin-right: 50px;
+    margin-right: 20px;
     display: inline-block;
 }
 
