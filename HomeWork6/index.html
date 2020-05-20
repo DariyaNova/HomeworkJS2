@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>eShop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="app">
+      <header>
+        <div class="logo">eShop</div>
+        <filters></filters>
+        <div class="cart">
+          <cart ref="cart"></cart>
+        </div>
+      </header>
+      <main>
+        <products ref="products"></products>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Cart.js"></script>
+    <script src="Product.js"></script>
+    <script src="main.js"></script>
+   
+  </body>
+</html>
